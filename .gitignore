@@ -1,0 +1,19 @@
+# Python stuff
+*.pyc
+__pycache__/
+
+# Virtual Environment (Don't upload this!)
+.venv
+venv/
+.env/
+Pipfile
+Pipfile.lock
+
+# Environment Variables (Keep secrets safe!)
+.env
+
+# Database (We'll use a cloud DB later)
+db.sqlite3
+
+# Static files collection folder
+staticfiles/
