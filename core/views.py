@@ -3,34 +3,39 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.shortcuts import render
 
-# Create your views here.
+
 def home(request):
-    #This simulates a database (we'll upgrade to a real DB later)
     projects = [
         {
-            'title': 'Algo Trading Bot',
-            'description': 'A Python-based bot for synthetic indices using RSI and EMA indicators. automated risk management included.',
-            'tech_stack': ['Python', 'MetaTrader5', 'Pandas'],
+            'title': 'Algorithmic Trading Bot',
+            'description': 'A Python-based automated trading system for Synthetic Indices. Built with custom strategies using RSI and EMA indicators to execute trades with automated risk management.',
+            'tech_stack': ['Python', 'Pandas', 'Technical Analysis'],
+            'link': 'https://github.com/TadaisheChibondo' # Update this to the specific repo if you have one
+        },
+        {
+            'title': 'Nhimbe AI',
+            'description': 'An AI-powered chatbot designed to support smallholder farmers in Zimbabwe. Provides real-time agricultural advice and resource management tips.',
+            'tech_stack': ['Python', 'AI/ML', 'Natural Language Processing'],
+            'link': 'boom900/' 
+        },
+        {
+            'title': 'Personal Portfolio',
+            'description': 'The full-stack application you are viewing. Deployed on Render with a Django backend and Bootstrap frontend, featuring dynamic content management.',
+            'tech_stack': ['Django', 'Bootstrap 5', 'Gunicorn'],
             'link': '#'
         },
         {
-            'title': 'Portfolio Website',
-            'description': 'The full-stack application you are looking at right now. Built with Django and Bootstrap.',
-            'tech_stack': ['Django', 'HTML/CSS', 'Bootstrap'],
-            'link': '#'
-        },
-        {
-            'title': 'Network Packet Sniffer',
-            'description': 'Cybersecurity tool to analyze network traffic and identify vulnerabilities.',
-            'tech_stack': ['Python', 'Wireshark', 'Scapy'],
+            'title': 'Lithium Value Chain Concept',
+            'description': 'Hackathon pitch and concept for optimizing the lithium supply chain in Zimbabwe, focusing on value addition and tracking.',
+            'tech_stack': ['Data Analysis', 'Research', 'Tech Pitch'],
             'link': '#'
         },
     ]
+
     context = {
-        'projects': projects
+        'projects': projects 
     }
     return render(request, 'home.html', context)
-
 # Add these imports at the top
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
@@ -79,3 +84,5 @@ def contact(request):
         else:
             form = ContactForm()
         return render(request, 'contact.html', {'form': form})
+def boom900(request):
+    return render(request, 'boom900.html')
