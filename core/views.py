@@ -10,13 +10,13 @@ def home(request):
             'title': 'Algorithmic Trading Bot',
             'description': 'A Python-based automated trading system for Synthetic Indices. Built with custom strategies using RSI and EMA indicators to execute trades with automated risk management.',
             'tech_stack': ['Python', 'Pandas', 'Technical Analysis'],
-            'link': 'https://github.com/TadaisheChibondo' # Update this to the specific repo if you have one
+            'link': 'https://tadaishechibondo.github.io/quant-portfolio' # Update this to the specific repo if you have one
         },
         {
             'title': 'Nhimbe AI',
             'description': 'An AI-powered chatbot designed to support smallholder farmers in Zimbabwe. Provides real-time agricultural advice and resource management tips.',
             'tech_stack': ['Python', 'AI/ML', 'Natural Language Processing'],
-            'link': 'boom900/' 
+            'link': 'https://github.com/TadaisheChibondo/NAI' 
         },
         {
             'title': 'Personal Portfolio',
@@ -25,10 +25,22 @@ def home(request):
             'link': '#'
         },
         {
-            'title': 'Lithium Value Chain Concept',
-            'description': 'Hackathon pitch and concept for optimizing the lithium supply chain in Zimbabwe, focusing on value addition and tracking.',
-            'tech_stack': ['Data Analysis', 'Research', 'Tech Pitch'],
-            'link': '#'
+            'title': 'Fleet-Commander',
+            'description': 'A fully automated fleet of trading algorithms designed to optimize returns on Synthetic Indices through diversified strategies and risk management techniques.',
+            'tech_stack': ['NumPy & SciPy', 'Next.js', 'TypeScript', 'Pandas & Pandas_Ta'],
+            'link': 'https://fleet-commander-woad.vercel.app/'
+        },
+        {
+         'title': 'Campus-Marketplace',
+            'description': 'A comprehensive e-commerce platform tailored for university students, featuring user authentication, product listings, shopping cart functionality, and secure payment processing.',
+            'tech_stack': ['React', 'Django', 'PostgreSQL'],
+            'link': 'https://campus-market-psi.vercel.app/'
+        },
+        {
+         'title': 'Campus-Accommodation',
+            'description': 'Real estate platform for university students to find and rent accommodations near their campuses, featuring property listings, user reviews, and booking functionalities.',
+            'tech_stack': ['Real-Estate', 'Next.js', 'Payment Integration'],
+            'link': 'https://campus-market-psi.vercel.app/'
         },
     ]
 
