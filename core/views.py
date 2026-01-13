@@ -40,7 +40,7 @@ def home(request):
          'title': 'Campus-Accommodation',
             'description': 'Real estate platform for university students to find and rent accommodations near their campuses, featuring property listings, user reviews, and booking functionalities.',
             'tech_stack': ['Real-Estate', 'Next.js', 'Payment Integration'],
-            'link': 'https://campus-market-psi.vercel.app/'
+            'link': 'https://campus-accomodation.vercel.app/'
         },
     ]
 
